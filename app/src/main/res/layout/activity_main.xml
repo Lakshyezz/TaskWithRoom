@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondary"
+    android:backgroundTint="@color/secondary"
     tools:context=".MainActivity">
 
  <androidx.recyclerview.widget.RecyclerView
      android:id="@+id/rvNotes"
      android:layout_width="match_parent"
-     android:layout_height="match_parent" />
+     android:layout_height="match_parent"
+     tools:listitem="@layout/note_rv_item"
+     />
 
-
+ <com.google.android.material.floatingactionbutton.FloatingActionButton
+     android:id="@+id/idFABaddNote"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+     android:src="@drawable/ic_add"
+     app:tint="@color/white"
+    android:layout_margin="20dp"
+    android:backgroundTint="@color/dark"
+    />
 
 </RelativeLayout>
